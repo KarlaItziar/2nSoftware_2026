@@ -1,2 +1,1 @@
-hola
-papaya
+print("Hola, Mundo!")
