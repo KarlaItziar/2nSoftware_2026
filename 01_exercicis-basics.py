@@ -10,6 +10,9 @@ print("Escriu un programa que imprimeixi el teu nom i la teva ciutat en línies 
 
 print("Karla Suquia Vegué \nHospitalet")
 
+
+print("--------------")
+
 print("\nExercici 2: Mostra els tipus de dades de les variables següents:")
 print("Utilitza la comanda 'type()' per determinar el tipus de dades de cada variable.\n")
 a = 15
@@ -23,11 +26,25 @@ e = None
 print(type(a),"\n",type(b),"\n",type(c),"\n",type(d),"\n",type(e))
 
 
+print("--------------")
+
 print("\nExercici 3: Conversió de tipus")
 print("Converteix la cadena \"12345\" a un enter i després a un float.")
 print("Converteix el float 3.99 a un enter. Què passa?")
 
 ### Completa aquí
+cadena = "12345"
+int = int(cadena)
+float = float(cadena)
+
+print(cadena,"\n",float,"\n",int)
+
+num = 3.99
+enter = int(num)
+
+print(num,"\n",enter,"\n") 
+## No podrem pasar d'un nombre "dificil" com es un decimal a un "sencill", un enter.
+
 
 print("--------------")
 
@@ -40,6 +57,12 @@ print("Utilitza f-strings per imprimir una presentació.")
 #age = 38
 
 ### Completa aquí
+nom= "Karla Suquia Vegue"
+edat= 18
+altura= 1.73
+
+print(f"Hola! Em dic {nom}, tinc {edat} anys i faig {altura} metres")
+
 
 print("--------------")
 
@@ -48,6 +71,10 @@ print("1. Crea una variable amb el nombre PI (sense assignar una variable)")
 print("2. Arrodoneix el nombre amb round()")
 print("3. Fes la divisió entera entre el nombre resultant i el nombre 2")
 print("4. El resultat hauria de ser 1")
+
+### Completa aquí
+
+
 
 print("--------------")
 
