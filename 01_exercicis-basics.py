@@ -3,6 +3,7 @@
 # Exercicis per practicar els conceptes apresos a les lliçons.
 ###
 
+
 print("\nExercici 1: Imprimir missatges")
 print("Escriu un programa que imprimeixi el teu nom i la teva ciutat en línies separades.\n")
 
@@ -39,8 +40,8 @@ float = float(cadena)
 
 print(cadena,"\n",float,"\n",int)
 
-num = 3.99
-enter = int(num)
+
+enter = int(3.99)
 
 print(num,"\n",enter,"\n") 
 ## No podrem pasar d'un nombre "dificil" com es un decimal a un "sencill", un enter.
@@ -73,7 +74,12 @@ print("3. Fes la divisió entera entre el nombre resultant i el nombre 2")
 print("4. El resultat hauria de ser 1")
 
 ### Completa aquí
+from cmath import pi
 
+nombrepi = pi
+arrodonit = round(nombrepi)
+operacio = arrodonit // 2
+print(operacio)
 
 
 print("--------------")
@@ -84,6 +90,11 @@ print("Converteix aquest valor a Fahrenheit amb la fórmula: F = (C * 9/5) + 32"
 print("Mostra els dos valors amb un missatge clar.")
 
 ### Completa aquí
+temperatura = input("Introdueix la temperatura en graus Celsius:")
+celcius = float(temperatura)
+fahrenheit = (celcius * 9/5) + 32
+
+print(f"la temperatura en fahrenheit es de {fahrenheit}F")
 
 print("--------------")
 
@@ -93,6 +104,13 @@ print("Calcula quant és la propina i el total final que s'ha de pagar.")
 print("Mostra els resultats amb 2 decimals.")
 
 ### Completa aquí
+compte = input("Digues el total del compte: ")
+propina = input("Quin persentatge de propina vols deixar: ")
+
+total = compte * (propina//100)
+
+print(f"Hauras de deixar {total:.2f}€ de propina")
+
 
 print("--------------")
 
