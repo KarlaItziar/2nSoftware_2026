@@ -35,15 +35,14 @@ print("Converteix el float 3.99 a un enter. Què passa?")
 
 ### Completa aquí
 cadena = "12345"
-int = int(cadena)
-float = float(cadena)
+enter = int(cadena)
+decimal = float(cadena)
 
-print(cadena,"\n",float,"\n",int)
+print(cadena,"\n",enter,"\n",decimal)
 
+num = 3.99
 
-enter = int(3.99)
-
-print(num,"\n",enter,"\n") 
+print(num,"\n",int(num),"\n") 
 ## No podrem pasar d'un nombre "dificil" com es un decimal a un "sencill", un enter.
 
 
@@ -119,4 +118,9 @@ print("Demana una contrasenya a l'usuari.")
 print("Comprova si té almenys 8 caràcters.")
 print("Mostra 'Contrasenya vàlida' o 'Contrasenya no vàlida'.")
 
+contrasenya = input("Introdueix la teva contrasenya: ")
+if len(contrasenya) >= 8:
+    print("Contrasenya vàlida")
+else:
+    print("Contrasenya no vàlida")
 ### Completa aquí
