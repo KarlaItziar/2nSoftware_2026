@@ -9,6 +9,8 @@
 # - Entre -75 dBm i menys de -67 dBm: feble
 # - Inferior a -75 dBm: molt feble
 
+
+
 # Exercici 2: Nivell de recepció d'una connexió de fibra òptica
 # Demana la potència òptica rebuda en dBm. Per a aquest exercici, considera
 # acceptable un nivell entre -27 dBm i -8 dBm, ambdós inclosos.
