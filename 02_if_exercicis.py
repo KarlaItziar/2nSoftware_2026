@@ -9,12 +9,26 @@
 # - Entre -75 dBm i menys de -67 dBm: feble
 # - Inferior a -75 dBm: molt feble
 
+senyal_rebut = -60 # print("Introdueix la senyal rebuda en dBm: ")
+
+if senyal_rebut > -50:
+    qualitat_senyal = "excel·lent"
+elif senyal_rebut > -67:
+    qualitat_senyal = "bona"
+elif senyal_rebut > -75:
+    qualitat_senyal = "feble"
+else:
+    qualitat_senyal = "molt feble"
+
+print(f"{qualitat_senyal}")
 
 
 # Exercici 2: Nivell de recepció d'una connexió de fibra òptica
 # Demana la potència òptica rebuda en dBm. Per a aquest exercici, considera
 # acceptable un nivell entre -27 dBm i -8 dBm, ambdós inclosos.
 # Indica si el nivell és massa baix, acceptable o massa alt.
+
+
 
 # Exercici 3: Consum mensual de dades mòbils
 # Demana el consum de dades en GB d'una línia mòbil. El pla inclou 20 GB.
