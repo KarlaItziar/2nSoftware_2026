@@ -32,9 +32,18 @@ print(f"{max}")
 
 # Exercici 4: Filtrar cadenes per longitud
 # Donada la llista de paraules següent:
-# paraules = ["casa", "arbre", "sol", "elefant", "lluna"]
+paraules = ["casa", "arbre", "sol", "elefant", "lluna"]
 # Crea una llista nova que contingui només les paraules amb més de 5 lletres
 # fent servir un bucle for i list comprehension.
+
+cadena = []
+
+for i in paraules:
+    if len(i) >= 5:
+        cadena.append(i)
+
+
+print(f"{cadena}")
 
 # Exercici 5: Comptar paraules que comencen per una lletra
 # Donada la llista de paraules següent:
