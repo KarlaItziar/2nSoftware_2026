@@ -47,14 +47,34 @@ print(f"{cadena}")
 
 # Exercici 5: Comptar paraules que comencen per una lletra
 # Donada la llista de paraules següent:
-# paraules = ["casa", "arbre", "sol", "elefant", "lluna", "cotxe"]
+paraules = ["casa", "arbre", "sol", "elefant", "lluna", "cotxe"]
 # Demana a l'usuari que introdueixi una lletra.
 # Compta quantes paraules de la llista comencen per aquesta lletra (sense diferenciar majúscules/minúscules).
 
+lletra = input("Introdueix una lletra: ").lower()
+comptador = 0
+
+for i in paraules:
+    if i.lower().startswith(lletra):
+        comptador +=1
+
+print(f"Hi ha {comptador} paraules amb la lletra {lletra}")
+
+
+
+
 # Exercici 6: Mesures de tensió d'un sensor
 # Durant una prova s'han registrat les tensions següents (en volts):
-# tensions = [4.8, 5.0, 5.1, 4.9, 5.2]
+tensions = [4.8, 5.0, 5.1, 4.9, 5.2]
 # Fent servir un bucle for, calcula la tensió mitjana i imprimeix-la.
+
+sumatori = 0
+for i in tensions:
+    sumatori += i
+
+mitjana = sumatori/len(tensions)
+
+print(f"{mitjana}")
 
 # Exercici 7: Corrent en resistències
 # En un circuit s'aplica una tensió de 12 V a aquestes resistències:
